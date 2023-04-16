@@ -1,0 +1,45 @@
+//EX 1
+
+const maxNr = function (x, y) {
+  if (x > y) {
+    return x;
+  } else {
+    return y;
+  }
+};
+
+console.log(maxNr(12, 15));
+
+//EX 2
+
+function loginUser(user, varsta, codTara) {
+  if (user === "admin" || (varsta >= 18 && codTara == "RO")) {
+    console.log("Ai intrat pe site 🎈");
+  } else {
+    console.log("Accesul este interzis ❌");
+  }
+}
+
+let user1 = "Nelu";
+let varsta1 = 17;
+let codTara1 = "RO";
+
+let user2 = "admin";
+let varsta2 = 10;
+let codTara2 = "FR";
+
+loginUser(user1, varsta1, codTara1);
+loginUser(user2, varsta2, codTara2);
+
+//EX 3
+
+function isOver100Pow(n) {
+  if (n ** 2 > 100) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+const x = isOver100Pow(10);
+console.log(x);
